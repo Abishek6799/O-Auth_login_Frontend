@@ -1,8 +1,15 @@
-# React + Vite
+# Simple OAuth Login with Google, Facebook, GitHub and JWT Tokens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Key Concepts:**
 
-Currently, two official plugins are available:
+* **OAuth 2.0:** An authorization framework that allows users to grant third-party applications access to their data without sharing their credentials.
+* **JWT:** A compact and self-contained way to securely transmit information between parties as JSON objects. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Technologies:**
+
+* **Frontend:**
+    * Example: React
+* **OAuth Providers:**
+    * Google
+    * Facebook
+    * GitHub
