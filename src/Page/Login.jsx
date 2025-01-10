@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GrFormViewHide } from "react-icons/gr";
 import { BiShowAlt } from "react-icons/bi";
-import { FaGoogle, FaFacebookF, FaGithub } from "react-icons/fa"; // Import logos
+import { FaGoogle, FaFacebookF, FaGithub } from "react-icons/fa"; 
 
 const Login = ({ setToken }) => {
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ const Login = ({ setToken }) => {
     e.preventDefault();
     const payload = { email, password };
     await axios
-      .post("http://localhost:4000/api/auth/login", payload)
+      .post("https://o-auth-login-backend.onrender.com/api/auth/login", payload)
       .then((res) => {
         toast.success(res.data.message);
         const token = res.data.token;
@@ -95,7 +95,7 @@ const Login = ({ setToken }) => {
           <div className="space-y-4">
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/google";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/google";
               }}
               className="w-full bg-red-600 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-red-700 transition-all duration-300"
             >
@@ -105,7 +105,7 @@ const Login = ({ setToken }) => {
 
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/facebook";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/facebook";
               }}
               className="w-full bg-blue-600 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-blue-700 transition-all duration-300"
             >
@@ -115,7 +115,7 @@ const Login = ({ setToken }) => {
 
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/github";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/github";
               }}
               className="w-full bg-gray-800 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-gray-900 transition-all duration-300"
             >

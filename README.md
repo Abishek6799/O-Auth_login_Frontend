@@ -8,7 +8,7 @@
 **Technologies:**
 
 * **Frontend:**
-    * Example: React
+    * React
 * **OAuth Providers:**
     * Google
     * Facebook
