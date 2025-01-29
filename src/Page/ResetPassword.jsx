@@ -15,7 +15,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`http://localhost:4000/api/auth/reset-password/${id}/${token}`, {
+      const res = await axios.post(`https://o-auth-login-backend.onrender.com/api/auth/reset-password/${id}/${token}`, {
         password,
       });
       toast.success(res.data.message);

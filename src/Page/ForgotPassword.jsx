@@ -12,7 +12,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:4000/api/auth/forgot-password", { email })
+      .post("https://o-auth-login-backend.onrender.com/api/auth/forgot-password", { email })
       .then((res) => {
         toast.success(res.data.message);
         navigate("/");
@@ -61,7 +61,7 @@ const ForgotPassword = () => {
           <div className="space-y-4">
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/google";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/google";
               }}
               className="w-full bg-red-600 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-red-700 transition-all duration-300"
             >
@@ -71,7 +71,7 @@ const ForgotPassword = () => {
 
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/facebook";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/facebook";
               }}
               className="w-full bg-blue-600 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-blue-700 transition-all duration-300"
             >
@@ -81,7 +81,7 @@ const ForgotPassword = () => {
 
             <button
               onClick={() => {
-                window.location.href = "http://localhost:4000/api/auth/github";
+                window.location.href = "https://o-auth-login-backend.onrender.com/api/auth/github";
               }}
               className="w-full bg-gray-800 text-white py-3 rounded-lg flex items-center justify-center space-x-3 hover:bg-gray-900 transition-all duration-300"
             >
